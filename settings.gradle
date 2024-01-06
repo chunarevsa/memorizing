@@ -1,4 +1,8 @@
 rootProject.name = 'memorizing'
 
-includeBuild 'api-gateway'
 includeBuild 'config-server'
+includeBuild 'eureka-server'
+
+
+includeBuild 'api-gateway'
+
