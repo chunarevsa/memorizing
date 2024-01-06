@@ -1,0 +1,8 @@
+rootProject.name = 'memorizing'
+include 'api-gateway'
+include 'eureka-server'
+include 'api-gateway:src:main:config-server'
+findProject(':api-gateway:src:main:config-server')?.name = 'config-server'
+include 'config-server'
+include 'api-gateway'
+
