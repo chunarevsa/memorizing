@@ -17,6 +17,16 @@
                   <project path="$PROJECT_DIR$/eureka-server" />
                 </projects>
               </build>
+              <build path="$PROJECT_DIR$/memorizing-core" name="memorizing-core">
+                <projects>
+                  <project path="$PROJECT_DIR$/memorizing-core" />
+                </projects>
+              </build>
+              <build path="$PROJECT_DIR$/memorizing-telegram-bot" name="memorizing-telegram-bot">
+                <projects>
+                  <project path="$PROJECT_DIR$/memorizing-telegram-bot" />
+                </projects>
+              </build>
               <build path="$PROJECT_DIR$/api-gateway" name="api-gateway">
                 <projects>
                   <project path="$PROJECT_DIR$/api-gateway" />
@@ -33,6 +43,8 @@
             <option value="$PROJECT_DIR$/api-gateway" />
             <option value="$PROJECT_DIR$/config-server" />
             <option value="$PROJECT_DIR$/eureka-server" />
+            <option value="$PROJECT_DIR$/memorizing-core" />
+            <option value="$PROJECT_DIR$/memorizing-telegram-bot" />
           </set>
         </option>
       </GradleProjectSettings>
@@ -60,6 +72,15 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/eureka-server" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/memorizing-core" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/memorizing-core" />
           </set>
         </option>
       </GradleProjectSettings>
