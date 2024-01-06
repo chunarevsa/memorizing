@@ -12,6 +12,11 @@
                   <project path="$PROJECT_DIR$/api-gateway" />
                 </projects>
               </build>
+              <build path="$PROJECT_DIR$/config-server" name="config-server">
+                <projects>
+                  <project path="$PROJECT_DIR$/config-server" />
+                </projects>
+              </build>
             </builds>
           </compositeBuild>
         </compositeConfiguration>
@@ -21,6 +26,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/api-gateway" />
+            <option value="$PROJECT_DIR$/config-server" />
           </set>
         </option>
       </GradleProjectSettings>
@@ -30,6 +36,15 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/api-gateway" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/config-server" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/config-server" />
           </set>
         </option>
       </GradleProjectSettings>

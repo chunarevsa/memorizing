@@ -1,3 +1,4 @@
 rootProject.name = 'memorizing'
 
 includeBuild 'api-gateway'
+includeBuild 'config-server'
