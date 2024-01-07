@@ -1,0 +1,99 @@
+version: '3'
+
+services:
+  # Data base
+#  core-db:
+#    image: postgres:latest
+#    ports:
+#      - "5400:5432"
+#    environment:
+#      POSTGRES_DB: card-service
+#      POSTGRES_USER: root
+#      POSTGRES_PASSWORD: root
+#    networks:
+#      - core-net
+#
+#  telegram-bot-db:
+#    image: postgres:latest
+#    ports:
+#      - "5401:5432"
+#    environment:
+#      POSTGRES_DB: telegram-bot-service
+#      POSTGRES_USER: root
+#      POSTGRES_PASSWORD: root
+#    networks:
+#        - telegram-bot-net
+
+  # Environment
+  config-server:
+    build:
+      context: ./config-server
+      dockerfile: Dockerfile
+    ports:
+      - "8888:8888"
+    networks:
+      - environment-net
+
+  eureka-server:
+    build:
+      context: ./eureka-server
+      dockerfile: Dockerfile
+    ports:
+      - "8761:8761"
+    depends_on:
+      - config-server
+    networks:
+      - environment-net
+
+#  api-gateway:
+#    build:
+#      context: ./api-gateway
+#      dockerfile: Dockerfile
+#    ports:
+#      - "8765:8765"
+#    depends_on:
+#      - core-service
+#      - telegram-bot-service
+#    networks:
+#      - environment-net
+
+  # Services
+#  core-service:
+#    build:
+#      context: ./memorizing-core
+#      dockerfile: Dockerfile
+#    #    ports:
+#    #      - "8095:8095"
+#    volumes:
+#      - core-db-data:/var/lib/postgresql/data
+#    depends_on:
+#      - core-db
+#    networks:
+#      - core-net
+#
+#  telegram-bot-service:
+#    build:
+#      context: ./memorizing-telegram-bot
+#      dockerfile: Dockerfile
+##    ports:
+##      - "8096:8096"
+#    volumes:
+#      - telegram-bot-db-data:/var/lib/postgresql/data
+#    depends_on:
+#      - telegram-bot-db
+#    networks:
+#      - telegram-bot-net
+
+
+
+#volumes:
+#  telegram-bot-db-data:
+#  core-db-data:
+
+networks:
+  telegram-bot-net:
+    driver: bridge
+  core-net:
+    driver: bridge
+  environment-net:
+    driver: bridge
