@@ -7,22 +7,22 @@ services:
     ports:
       - "5400:5432"
     environment:
-      POSTGRES_DB: card-service
+      POSTGRES_DB: memorizing-core
       POSTGRES_USER: root
       POSTGRES_PASSWORD: root
     networks:
-      - core-net
+      - net
 
   telegram-bot-db:
     image: postgres:latest
     ports:
       - "5401:5432"
     environment:
-      POSTGRES_DB: telegram-bot-service
+      POSTGRES_DB: memorizing-telegram-bot
       POSTGRES_USER: root
       POSTGRES_PASSWORD: root
     networks:
-        - telegram-bot-net
+        - net
 
   # Environment
   config-server:
@@ -32,7 +32,7 @@ services:
     ports:
       - "8888:8888"
     networks:
-      - environment-net
+      - net
 
   eureka-server:
     build:
@@ -40,62 +40,68 @@ services:
       dockerfile: Dockerfile
     ports:
       - "8761:8761"
+    environment:
+      LOCALHOST: ${LOCALHOST}
     depends_on:
       - config-server
     networks:
-      - environment-net
+      - net
 
   api-gateway:
     build:
       context: ./api-gateway
       dockerfile: Dockerfile
-    environment:
-      LOCAL_IP: ${LOCAL_IP}
     ports:
       - "8765:8765"
+    environment:
+      LOCALHOST: ${LOCALHOST}
+      GATEWAY_PORT: ${GATEWAY_PORT}
     depends_on:
+      - config-server
+      - eureka-server
       - core-service
       - telegram-bot-service
     networks:
-      - environment-net
+      - net
 
   # Services
   core-service:
     build:
       context: ./memorizing-core
       dockerfile: Dockerfile
-    #    ports:
-    #      - "8095:8095"
+    environment:
+      LOCALHOST: ${LOCALHOST}
+    ports:
+      - "8000:8000"
     volumes:
       - core-db-data:/var/lib/postgresql/data
     depends_on:
       - core-db
+      - config-server
+      - eureka-server
     networks:
-      - core-net
+      - net
 
   telegram-bot-service:
     build:
       context: ./memorizing-telegram-bot
       dockerfile: Dockerfile
-#    ports:
-#      - "8096:8096"
+    environment:
+      LOCALHOST: ${LOCALHOST}
+      GATEWAY_PORT: ${GATEWAY_PORT}
     volumes:
       - telegram-bot-db-data:/var/lib/postgresql/data
     depends_on:
       - telegram-bot-db
+      - config-server
+      - eureka-server
     networks:
-      - telegram-bot-net
-
-
+      - net
 
 volumes:
   telegram-bot-db-data:
   core-db-data:
 
 networks:
-  telegram-bot-net:
-    driver: bridge
-  core-net:
-    driver: bridge
-  environment-net:
+  net:
     driver: bridge
