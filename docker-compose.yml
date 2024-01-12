@@ -4,6 +4,7 @@ services:
   # Data base
   core-db:
     image: postgres:latest
+    restart: always
     ports:
       - "5400:5432"
     environment:
@@ -15,6 +16,7 @@ services:
 
   telegram-bot-db:
     image: postgres:latest
+    restart: always
     ports:
       - "5401:5432"
     environment:
@@ -29,6 +31,7 @@ services:
     build:
       context: ./config-server
       dockerfile: Dockerfile
+    restart: always
     ports:
       - "8888:8888"
     networks:
@@ -38,6 +41,7 @@ services:
     build:
       context: ./eureka-server
       dockerfile: Dockerfile
+    restart: always
     ports:
       - "8761:8761"
     environment:
@@ -51,6 +55,7 @@ services:
     build:
       context: ./api-gateway
       dockerfile: Dockerfile
+    restart: always
     ports:
       - "8765:8765"
     environment:
@@ -69,10 +74,9 @@ services:
     build:
       context: ./memorizing-core
       dockerfile: Dockerfile
+    restart: always
     environment:
       LOCALHOST: ${LOCALHOST}
-    ports:
-      - "8000:8000"
     volumes:
       - core-db-data:/var/lib/postgresql/data
     depends_on:
@@ -86,7 +90,13 @@ services:
     build:
       context: ./memorizing-telegram-bot
       dockerfile: Dockerfile
+    restart: always
+
+    ports:
+      - "8000:8000"
+
     environment:
+      JAVA_TOOL_OPTIONS: "-agentlib:jdwp=transport=dt_socket,address=*:8000,server=y,suspend=n"
       LOCALHOST: ${LOCALHOST}
       GATEWAY_PORT: ${GATEWAY_PORT}
     volumes:

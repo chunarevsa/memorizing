@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+
+  # Services
+  core-service:
+    ports:
+      - "7000:7000"
+    environment:
+      JAVA_TOOL_OPTIONS: "-agentlib:jdwp=transport=dt_socket,address=*:7000,server=y,suspend=n"
+
+  telegram-bot-service:
+    ports:
+      - "8000:8000"
+    environment:
+      JAVA_TOOL_OPTIONS: "-agentlib:jdwp=transport=dt_socket,address=*:8000,server=y,suspend=n"
