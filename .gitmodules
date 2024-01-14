@@ -1,0 +1,15 @@
+[submodule "config-server"]
+	path = config-server
+	url = https://github.com/chunarevsa/config-server.git
+[submodule "eureka-server"]
+	path = eureka-server
+	url = https://github.com/chunarevsa/eureka-server.git
+[submodule "memorizing-core"]
+	path = memorizing-core
+	url = https://github.com/chunarevsa/memorizing-core.git
+[submodule "memorizing-telegram-bot"]
+	path = memorizing-telegram-bot
+	url = https://github.com/chunarevsa/memorizing-telegram-bot.git
+[submodule "api-gateway"]
+	path = api-gateway
+	url = https://github.com/chunarevsa/api-gateway.git
