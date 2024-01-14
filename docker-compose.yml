@@ -96,7 +96,8 @@ services:
       - "8000:8000"
 
     environment:
-      JAVA_TOOL_OPTIONS: "-agentlib:jdwp=transport=dt_socket,address=*:8000,server=y,suspend=n"
+      TELEGRAM_BOT_TOKEN: ${TELEGRAM_BOT_TOKEN}
+      TELEGRAM_BOT_NAME: ${TELEGRAM_BOT_NAME}
       LOCALHOST: ${LOCALHOST}
       GATEWAY_PORT: ${GATEWAY_PORT}
     volumes:
