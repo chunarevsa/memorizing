@@ -5,10 +5,10 @@ git clone --recurse-submodules https://github.com/chunarevsa/memorizing.git
 docker-compose --file docker-compose.yml --file docker-compose.dev.yml up -d
 
 # Creating backup
-docker exec -t memorizing-core-db-1 pg_dump -U root -E UTF-8 -c memorizing-core -f backup_07_01_2024.sql
-docker cp memorizing-core-db-1:backup_07_01_2024.sql ./memorizing-core/dbbackup/
+docker exec -t memorizing-core-db-1 pg_dump -U root -E UTF-8 -c memorizing-core -f backup_16_01_2024.sql
+docker cp memorizing-core-db-1:backup_16_01_2024.sql ./memorizing-core/dbbackup/
 
 # Executing backup file
-docker cp ./memorizing-core/dbbackup/backup_07_01_2024.sql memorizing-core-db-1:/
+docker cp ./memorizing-core/dbbackup/backup_16_01_2024.sql memorizing-core-db-1:/
 docker exec -it memorizing-core-db-1 /bin/bash
 psql -U root -d memorizing-core < backup_07_01_2024.sql
