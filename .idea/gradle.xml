@@ -22,6 +22,11 @@
                   <project path="$PROJECT_DIR$/memorizing-core" />
                 </projects>
               </build>
+              <build path="$PROJECT_DIR$/memorizing-core-api" name="memorizing-core-api">
+                <projects>
+                  <project path="$PROJECT_DIR$/memorizing-core-api" />
+                </projects>
+              </build>
               <build path="$PROJECT_DIR$/memorizing-telegram-bot" name="memorizing-telegram-bot">
                 <projects>
                   <project path="$PROJECT_DIR$/memorizing-telegram-bot" />
@@ -44,6 +49,7 @@
             <option value="$PROJECT_DIR$/config-server" />
             <option value="$PROJECT_DIR$/eureka-server" />
             <option value="$PROJECT_DIR$/memorizing-core" />
+            <option value="$PROJECT_DIR$/memorizing-core-api" />
             <option value="$PROJECT_DIR$/memorizing-telegram-bot" />
           </set>
         </option>
@@ -86,10 +92,10 @@
       </GradleProjectSettings>
       <GradleProjectSettings>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/../spring-micro-demo/eureka-server" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/memorizing-core-api" />
         <option name="modules">
           <set>
-            <option value="$PROJECT_DIR$/../spring-micro-demo/eureka-server" />
+            <option value="$PROJECT_DIR$/memorizing-core-api" />
           </set>
         </option>
       </GradleProjectSettings>

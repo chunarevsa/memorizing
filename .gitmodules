@@ -13,3 +13,6 @@
 [submodule "api-gateway"]
 	path = api-gateway
 	url = https://github.com/chunarevsa/api-gateway.git
+[submodule "api-gateway"]
+	path = memorizing-core-api
+	url = https://github.com/chunarevsa/memorizing-core-api.git
