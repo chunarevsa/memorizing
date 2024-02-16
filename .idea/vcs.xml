@@ -6,7 +6,5 @@
     <mapping directory="$PROJECT_DIR$/config-server" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/eureka-server" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/memorizing-core" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/memorizing-core-api" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/memorizing-telegram-bot" vcs="Git" />
   </component>
 </project>

@@ -4,7 +4,6 @@ includeBuild 'config-server'
 includeBuild 'eureka-server'
 
 includeBuild 'memorizing-core'
-includeBuild 'memorizing-core-api'
 includeBuild 'memorizing-telegram-bot'
 
 includeBuild 'api-gateway'
