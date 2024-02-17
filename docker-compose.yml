@@ -69,6 +69,16 @@ services:
     networks:
       - net
 
+  rabbitmq:
+    image: rabbitmq:3.9.29-management
+    restart: always
+    environment:
+      RABBITMQ_DEFAULT_USER: root
+      RABBITMQ_DEFAULT_PASS: root
+    ports:
+      - "15672:15672"
+      - "5672:5672"
+
   # Services
   core-service:
     build:
