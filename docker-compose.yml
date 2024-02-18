@@ -80,7 +80,7 @@ services:
       dockerfile: Dockerfile
     restart: always
     environment:
-      SPRING_PROFILES_ACTIVE: prod
+      SPRING_PROFILES_ACTIVE: prod, rest
       LOCALHOST: ${LOCALHOST}
     volumes:
       - core-db-data:/var/lib/postgresql/data
