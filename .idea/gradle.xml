@@ -17,6 +17,11 @@
                   <project path="$PROJECT_DIR$/eureka-server" />
                 </projects>
               </build>
+              <build path="$PROJECT_DIR$/memorizing-common-api" name="memorizing-common-api">
+                <projects>
+                  <project path="$PROJECT_DIR$/memorizing-common-api" />
+                </projects>
+              </build>
               <build path="$PROJECT_DIR$/memorizing-core" name="memorizing-core">
                 <projects>
                   <project path="$PROJECT_DIR$/memorizing-core" />
@@ -43,6 +48,7 @@
             <option value="$PROJECT_DIR$/api-gateway" />
             <option value="$PROJECT_DIR$/config-server" />
             <option value="$PROJECT_DIR$/eureka-server" />
+            <option value="$PROJECT_DIR$/memorizing-common-api" />
             <option value="$PROJECT_DIR$/memorizing-core" />
             <option value="$PROJECT_DIR$/memorizing-telegram-bot" />
           </set>
@@ -76,10 +82,22 @@
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <compositeConfiguration>
+          <compositeBuild compositeDefinitionSource="SCRIPT">
+            <builds>
+              <build path="$PROJECT_DIR$/memorizing-common-api" name="memorizing-common-api">
+                <projects>
+                  <project path="$PROJECT_DIR$/memorizing-common-api" />
+                </projects>
+              </build>
+            </builds>
+          </compositeBuild>
+        </compositeConfiguration>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/memorizing-core" />
         <option name="modules">
           <set>
+            <option value="$PROJECT_DIR$/memorizing-common-api" />
             <option value="$PROJECT_DIR$/memorizing-core" />
           </set>
         </option>

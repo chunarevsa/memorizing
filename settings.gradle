@@ -3,6 +3,7 @@ rootProject.name = 'memorizing'
 includeBuild 'config-server'
 includeBuild 'eureka-server'
 
+includeBuild 'memorizing-common-api'
 includeBuild 'memorizing-core'
 includeBuild 'memorizing-telegram-bot'
 
