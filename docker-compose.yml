@@ -32,8 +32,12 @@ services:
       context: ./config-server
       dockerfile: Dockerfile
     restart: always
+    deploy:
+      resources:
+        limits:
+          memory: 512M
     environment:
-      SPRING_PROFILES_ACTIVE: prod
+      SPRING_PROFILES_ACTIVE: docker, prod
     ports:
       - "8888:8888"
     networks:
@@ -47,7 +51,7 @@ services:
     ports:
       - "8761:8761"
     environment:
-      SPRING_PROFILES_ACTIVE: prod
+      SPRING_PROFILES_ACTIVE: docker, prod
       LOCALHOST: ${LOCALHOST}
     depends_on:
       - config-server
@@ -59,10 +63,14 @@ services:
       context: ./api-gateway
       dockerfile: Dockerfile
     restart: always
+    deploy:
+      resources:
+        limits:
+          memory: 512M
     ports:
       - "8765:8765"
     environment:
-      SPRING_PROFILES_ACTIVE: prod
+      SPRING_PROFILES_ACTIVE: docker, prod
       LOCALHOST: ${LOCALHOST}
       GATEWAY_PORT: ${GATEWAY_PORT}
     depends_on:
@@ -89,8 +97,12 @@ services:
       context: ./memorizing-core
       dockerfile: Dockerfile
     restart: always
+    deploy:
+      resources:
+        limits:
+          memory: 512M
     environment:
-      SPRING_PROFILES_ACTIVE: prod, rest
+      SPRING_PROFILES_ACTIVE: docker, prod, rest
       LOCALHOST: ${LOCALHOST}
     volumes:
       - core-db-data:/var/lib/postgresql/data
@@ -106,10 +118,14 @@ services:
       context: ./memorizing-telegram-bot
       dockerfile: Dockerfile
     restart: always
+    deploy:
+      resources:
+        limits:
+          memory: 512M
     ports:
       - "8000:8000"
     environment:
-      SPRING_PROFILES_ACTIVE: prod, rest
+      SPRING_PROFILES_ACTIVE: docker, prod, rest
       TELEGRAM_BOT_TOKEN: ${TELEGRAM_BOT_TOKEN}
       TELEGRAM_BOT_NAME: ${TELEGRAM_BOT_NAME}
       LOCALHOST: ${LOCALHOST}
