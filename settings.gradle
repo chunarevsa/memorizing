@@ -1,11 +1,9 @@
-rootProject.name = 'memorizing'
+include ':config-server'
+include ':eureka-server'
 
-includeBuild 'config-server'
-includeBuild 'eureka-server'
+include ':memorizing-common-api'
+include ':memorizing-core'
+include ':memorizing-telegram-bot'
 
-includeBuild 'memorizing-common-api'
-includeBuild 'memorizing-core'
-includeBuild 'memorizing-telegram-bot'
-
-includeBuild 'api-gateway'
+include ':api-gateway'
 
