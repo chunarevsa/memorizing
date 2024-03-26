@@ -10,10 +10,10 @@ docker exec -t memorizing-core-db-1 pg_dump -U root -E UTF-8 -c memorizing-core 
 docker cp memorizing-core-db-1:backup_06_02_2024.sql ./memorizing-core/dbbackup/
 
 # Executing backup file
-docker cp ./memorizing-core/dbbackup/backup_18_02_2024-16_55_27.sql memorizing-core-db-1:/
+docker cp ./memorizing-core/dbbackup/backup_10_03_2024-15_32_31.sql memorizing-core-db-1:/
 docker exec -it memorizing-core-db-1 /bin/bash
-psql -U root -d memorizing-core < backup_18_02_2024-16_55_27.sql
+psql -U root -d memorizing-core < backup_10_03_2024-15_32_31.sql
 
-docker cp ./memorizing-telegram-bot/dbbackup/backup_18_02_2024-16_55_27.sql memorizing-telegram-bot-db-1:/
+docker cp ./memorizing-telegram-bot/dbbackup/backup_10_03_2024-15_32_31.sql memorizing-telegram-bot-db-1:/
 docker exec -it memorizing-telegram-bot-db-1 /bin/bash
-psql -U root -d memorizing-telegram-bot < backup_18_02_2024-16_55_27.sql
+psql -U root -d memorizing-telegram-bot < backup_10_03_2024-15_32_31.sql
