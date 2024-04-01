@@ -7,6 +7,14 @@
     <list default="true" id="f77e50e8-2d0e-4bca-b1af-2dd1104bce81" name="Changes" comment="update">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/test/java/com/example/apigateway/ApiGatewayApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/test/java/com/example/apigateway/ApiGatewayApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server" beforeDir="false" afterPath="$PROJECT_DIR$/config-server" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/src/test/java/com/example/configserver/ConfigServerApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/test/java/com/example/configserver/ConfigServerApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/src/test/java/com/example/eurekaserver/EurekaServerApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/src/test/java/com/example/eurekaserver/EurekaServerApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memorizing-common-api/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/memorizing-common-api/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memorizing-common-api/src/test/java/com/memorizing/commonapi/MemorizingCommonApiApplicationTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +70,7 @@
             <expand>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="memorizing" type="f1a62948:ProjectNode" />
+                <item name="eureka-server" type="f1a62948:ProjectNode" />
               </path>
             </expand>
             <select />
@@ -87,7 +95,7 @@
       </map>
     </option>
     <option name="RECENT_COMMON_BRANCH" value="main" />
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/eureka-server" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -151,7 +159,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Remote JVM Debug.telegram-bot-debug">
+  <component name="RunManager" selected="Gradle.memorizing [build]">
     <configuration name="memorizing [bootJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -437,9 +445,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.memorizing [build]" />
         <item itemvalue="Gradle.memorizing [bootJar]" />
         <item itemvalue="Gradle.memorizing:memorizing-telegram-bot [clean]" />
-        <item itemvalue="Gradle.memorizing [build]" />
         <item itemvalue="Gradle.memorizing [clean]" />
         <item itemvalue="Docker.docker-compose.yml.api-gateway: Compose Deployment" />
       </list>
@@ -507,6 +515,7 @@
       <workItem from="1711970661736" duration="79000" />
       <workItem from="1711981225999" duration="2264000" />
       <workItem from="1711641716873" duration="205000" />
+      <workItem from="1711992689964" duration="60000" />
     </task>
     <task id="LOCAL-00001" summary="extract profiles to docker-compose">
       <created>1708210023370</created>
