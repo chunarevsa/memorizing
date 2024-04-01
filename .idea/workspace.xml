@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f77e50e8-2d0e-4bca-b1af-2dd1104bce81" name="Changes" comment="add exceptions">
-      <change afterPath="$PROJECT_DIR$/memorizing-telegram-bot/src/main/java/org/memorizing/service/SendingService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/memorizing-telegram-bot/src/main/java/org/memorizing/service/UpdateService.java" afterDir="false" />
+    <list default="true" id="f77e50e8-2d0e-4bca-b1af-2dd1104bce81" name="Changes" comment="update">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/memorizing-telegram-bot" beforeDir="false" afterPath="$PROJECT_DIR$/memorizing-telegram-bot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/memorizing-telegram-bot/src/main/java/org/memorizing/controller/TelegramBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/memorizing-telegram-bot/src/main/java/org/memorizing/controller/TelegramBot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/memorizing-telegram-bot/src/main/java/org/memorizing/exception/AChatException.java" beforeDir="false" afterPath="$PROJECT_DIR$/memorizing-telegram-bot/src/main/java/org/memorizing/exception/AChatException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/memorizing-telegram-bot/src/main/java/org/memorizing/service/DispatcherService.java" beforeDir="false" afterPath="$PROJECT_DIR$/memorizing-telegram-bot/src/main/java/org/memorizing/service/DispatcherService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +59,12 @@
         </task>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="memorizing" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -87,7 +87,7 @@
       </map>
     </option>
     <option name="RECENT_COMMON_BRANCH" value="main" />
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/memorizing-telegram-bot" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="MarkdownSettingsMigration">
