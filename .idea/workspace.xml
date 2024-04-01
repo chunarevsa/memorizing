@@ -4,22 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f77e50e8-2d0e-4bca-b1af-2dd1104bce81" name="Changes" comment="TEMP">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/commands" beforeDir="false" afterPath="$PROJECT_DIR$/commands" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server" beforeDir="false" afterPath="$PROJECT_DIR$/config-server" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/memorizing-core" beforeDir="false" afterPath="$PROJECT_DIR$/memorizing-core" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+    <list default="true" id="f77e50e8-2d0e-4bca-b1af-2dd1104bce81" name="Changes" comment="add exceptions">
+      <change afterPath="$PROJECT_DIR$/memorizing-telegram-bot/src/main/java/org/memorizing/service/SendingService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/memorizing-telegram-bot/src/main/java/org/memorizing/service/UpdateService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memorizing-telegram-bot" beforeDir="false" afterPath="$PROJECT_DIR$/memorizing-telegram-bot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memorizing-telegram-bot/src/main/java/org/memorizing/controller/TelegramBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/memorizing-telegram-bot/src/main/java/org/memorizing/controller/TelegramBot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memorizing-telegram-bot/src/main/java/org/memorizing/exception/AChatException.java" beforeDir="false" afterPath="$PROJECT_DIR$/memorizing-telegram-bot/src/main/java/org/memorizing/exception/AChatException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memorizing-telegram-bot/src/main/java/org/memorizing/service/DispatcherService.java" beforeDir="false" afterPath="$PROJECT_DIR$/memorizing-telegram-bot/src/main/java/org/memorizing/service/DispatcherService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,27 +99,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "C:/Data/Java/memorizing/memorizing-telegram-bot",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.37816092",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "spring.configuration.checksum": "47a84c1f79eec7f7c9765428f6e2e609"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Data/Java/memorizing&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.37816092&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;47a84c1f79eec7f7c9765428f6e2e609&quot;
   }
-}]]></component>
+}</component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.memorizing.service" />
+      <recent name="org.memorizing.controller" />
       <recent name="org.memorizing.config" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -501,6 +498,15 @@
       <workItem from="1711284074374" duration="2734000" />
       <workItem from="1711301371990" duration="3734000" />
       <workItem from="1711444994692" duration="2135000" />
+      <workItem from="1711465995503" duration="9820000" />
+      <workItem from="1711531733050" duration="3967000" />
+      <workItem from="1711732492683" duration="13678000" />
+      <workItem from="1711891299402" duration="6000" />
+      <workItem from="1711897765345" duration="1534000" />
+      <workItem from="1711904643853" duration="12033000" />
+      <workItem from="1711970661736" duration="79000" />
+      <workItem from="1711981225999" duration="2264000" />
+      <workItem from="1711641716873" duration="205000" />
     </task>
     <task id="LOCAL-00001" summary="extract profiles to docker-compose">
       <created>1708210023370</created>
@@ -558,7 +564,35 @@
       <option name="project" value="LOCAL" />
       <updated>1708384418435</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="gradle settings">
+      <created>1711466104648</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1711466104648</updated>
+    </task>
+    <task id="LOCAL-00010" summary="add memory limits and profile">
+      <created>1711466152507</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1711466152507</updated>
+    </task>
+    <task id="LOCAL-00011" summary="add backup">
+      <created>1711466164675</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1711466164675</updated>
+    </task>
+    <task id="LOCAL-00012" summary="add exceptions">
+      <created>1711641445693</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1711641445693</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -600,12 +634,15 @@
     <MESSAGE value="extract profiles to docker-compose" />
     <MESSAGE value="extract configurations" />
     <MESSAGE value="add rest profile" />
-    <MESSAGE value="add backup" />
     <MESSAGE value="delete mq" />
     <MESSAGE value="update group" />
     <MESSAGE value="extract models to separately module" />
     <MESSAGE value="TEMP" />
-    <option name="LAST_COMMIT_MESSAGE" value="TEMP" />
+    <MESSAGE value="gradle settings" />
+    <MESSAGE value="add memory limits and profile" />
+    <MESSAGE value="add backup" />
+    <MESSAGE value="add exceptions" />
+    <option name="LAST_COMMIT_MESSAGE" value="add exceptions" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -623,11 +660,6 @@
           <url>file://$PROJECT_DIR$/memorizing-core/src/main/java/com/memorizing/core/cardStock/rest/CardStockRestController.kt</url>
           <line>61</line>
           <option name="timeStamp" value="29" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/memorizing-telegram-bot/src/main/java/org/memorizing/service/DispatcherService.java</url>
-          <line>78</line>
-          <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
