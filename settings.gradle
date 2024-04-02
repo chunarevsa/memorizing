@@ -1,9 +1,8 @@
+include ':memorizing-common-api'
+include ':util'
+
 include ':config-server'
 include ':eureka-server'
-
-include ':memorizing-common-api'
 include ':memorizing-core'
 include ':memorizing-telegram-bot'
-
 include ':api-gateway'
-
