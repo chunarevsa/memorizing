@@ -4,12 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f77e50e8-2d0e-4bca-b1af-2dd1104bce81" name="Changes" comment="update">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="f77e50e8-2d0e-4bca-b1af-2dd1104bce81" name="Changes" comment="add util module">
+      <change afterPath="$PROJECT_DIR$/memorizing-core/src/test/resources/application-local.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/memorizing-core/src/test/resources/application-prod.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/memorizing-core/src/test/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/util/src/main/java/com/memorizing/util/InternetUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/util/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env_EXAMPLE" beforeDir="false" afterPath="$PROJECT_DIR$/.env_EXAMPLE" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/memorizing-telegram-bot" beforeDir="false" afterPath="$PROJECT_DIR$/memorizing-telegram-bot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/memorizing-telegram-bot/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/memorizing-telegram-bot/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application-prod.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application-prod.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands" beforeDir="false" afterPath="$PROJECT_DIR$/commands" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server" beforeDir="false" afterPath="$PROJECT_DIR$/config-server" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/src/main/resources/application-prod.yml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/application-prod.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memorizing-core" beforeDir="false" afterPath="$PROJECT_DIR$/memorizing-core" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memorizing-core/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/memorizing-core/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memorizing-core/src/main/resources/application-prod.yml" beforeDir="false" afterPath="$PROJECT_DIR$/memorizing-core/src/main/resources/application-prod.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memorizing-core/src/test/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/memorizing-core/src/test/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memorizing-telegram-bot/src/main/resources/application-prod.yml" beforeDir="false" afterPath="$PROJECT_DIR$/memorizing-telegram-bot/src/main/resources/application-prod.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memorizing-telegram-bot/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/memorizing-telegram-bot/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/src/main/resources/application.properties" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +94,17 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="memorizing" type="f1a62948:ProjectNode" />
               </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="memorizing" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="memorizing" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
             </expand>
             <select />
           </tree_state>
@@ -96,7 +128,7 @@
       </map>
     </option>
     <option name="RECENT_COMMON_BRANCH" value="main" />
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/memorizing-telegram-bot" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -108,25 +140,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Data/Java/memorizing&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.37816092&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;7ddc50e0e590fa643a0e2e41be24bc50&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "17",
+    "last_opened_file_path": "C:/Data/Java/memorizing/memorizing-telegram-bot",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.37816092",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
+    "spring.configuration.checksum": "6e43873457eff95a6453930f16f7379e"
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -137,11 +169,11 @@
       <recent name="org.memorizing.config" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Data\Java\memorizing\memorizing-core\src\test\resources" />
       <recent name="C:\Data\Java\memorizing\memorizing-telegram-bot\.idea" />
       <recent name="C:\Data\Java\memorizing\memorizing-telegram-bot" />
       <recent name="C:\Data\Java\memorizing\memorizing-telegram-bot\.gradle" />
       <recent name="C:\Data\Java\memorizing\memorizing-common-api\src\main\java\com\memorizing\commonapi\model" />
-      <recent name="C:\Data\Java\memorizing" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Data\Java\memorizing" />
@@ -160,7 +192,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.memorizing [build]">
+  <component name="RunManager" selected="Remote JVM Debug.telegram-bot-debug">
     <configuration name="memorizing [bootJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -182,7 +214,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="memorizing [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="memorizing [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -193,7 +225,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="build" />
+            <option value="clean" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -233,69 +265,6 @@
           </ENTRIES>
         </extension>
       </EXTENSION>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="memorizing:memorizing-common-api [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/memorizing-common-api" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="jar" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="memorizing:util [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/util" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="build" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="memorizing:util [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/util" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="jar" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
@@ -421,7 +390,7 @@
         <env name="TELEGRAM_BOT_TOKEN" value="6784016579:AAGLRgVj4z-ktU8DWlSt4SORX6Pdy0etZ_o" />
       </envs>
       <module name="memorizing.memorizing-telegram-bot.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="org.memorizing.TelegramBotApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.memorizing.TelegramBotApplication" />
       <extension name="net.ashald.envfile">
         <option name="IS_ENABLED" value="false" />
         <option name="IS_SUBST" value="false" />
@@ -450,13 +419,52 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="docker-compose.yml.api-gateway: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="api-gateway" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.core-service: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="core-service" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.telegram-bot-service: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="telegram-bot-service" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <list>
+      <item itemvalue="Docker.docker-compose.yml.api-gateway: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml.core-service: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml.telegram-bot-service: Compose Deployment" />
       <item itemvalue="Gradle.memorizing-core [:memorizing-common-api:build]" />
+      <item itemvalue="Gradle.memorizing [clean]" />
       <item itemvalue="Gradle.memorizing [bootJar]" />
-      <item itemvalue="Gradle.memorizing [build]" />
-      <item itemvalue="Gradle.memorizing:memorizing-common-api [jar]" />
-      <item itemvalue="Gradle.memorizing:util [build]" />
-      <item itemvalue="Gradle.memorizing:util [jar]" />
       <item itemvalue="Remote JVM Debug.core-debug" />
       <item itemvalue="Remote JVM Debug.telegram-bot-debug" />
       <item itemvalue="Spring Boot.UtilApplication" />
@@ -470,11 +478,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.memorizing [build]" />
         <item itemvalue="Gradle.memorizing [bootJar]" />
-        <item itemvalue="Gradle.memorizing:util [jar]" />
-        <item itemvalue="Gradle.memorizing:memorizing-common-api [jar]" />
-        <item itemvalue="Gradle.memorizing:util [build]" />
+        <item itemvalue="Gradle.memorizing [clean]" />
+        <item itemvalue="Docker.docker-compose.yml.telegram-bot-service: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.api-gateway: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.core-service: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
@@ -544,6 +552,17 @@
       <workItem from="1711994820864" duration="372000" />
       <workItem from="1712005064262" duration="2060000" />
       <workItem from="1712007164540" duration="620000" />
+      <workItem from="1712050223628" duration="178000" />
+      <workItem from="1712062980336" duration="3273000" />
+      <workItem from="1712138630268" duration="8943000" />
+      <workItem from="1712150496270" duration="2158000" />
+      <workItem from="1712153287450" duration="1658000" />
+      <workItem from="1712174141137" duration="24000" />
+      <workItem from="1712229271720" duration="612000" />
+      <workItem from="1712230591993" duration="4007000" />
+      <workItem from="1712249348582" duration="16000" />
+      <workItem from="1712313928580" duration="5691000" />
+      <workItem from="1712737124983" duration="3517000" />
     </task>
     <task id="LOCAL-00001" summary="extract profiles to docker-compose">
       <created>1708210023370</created>
@@ -657,7 +676,21 @@
       <option name="project" value="LOCAL" />
       <updated>1711993390659</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="add util module">
+      <created>1712050322891</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1712050322891</updated>
+    </task>
+    <task id="LOCAL-00018" summary="add util module">
+      <created>1712050370204</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1712050370204</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -709,7 +742,8 @@
     <MESSAGE value="add exceptions" />
     <MESSAGE value="update tests" />
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="add util module" />
+    <option name="LAST_COMMIT_MESSAGE" value="add util module" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -727,6 +761,26 @@
           <url>file://$PROJECT_DIR$/memorizing-core/src/main/java/com/memorizing/core/cardStock/rest/CardStockRestController.kt</url>
           <line>61</line>
           <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/memorizing-telegram-bot/src/main/java/com/memorizing/resource/user/rest/UserWebClientBuilder.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/memorizing-telegram-bot/src/main/java/com/memorizing/resource/core/rest/CoreWebClientBuilder.java</url>
+          <line>82</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/memorizing-telegram-bot/src/main/java/com/memorizing/resource/core/rest/CoreWebClientBuilder.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/memorizing-telegram-bot/src/main/java/com/memorizing/resource/core/rest/CoreWebClientBuilder.java</url>
+          <line>100</line>
+          <option name="timeStamp" value="44" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
