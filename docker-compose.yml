@@ -52,7 +52,6 @@ services:
       - "8761:8761"
     environment:
       SPRING_PROFILES_ACTIVE: docker, prod
-      LOCALHOST: ${LOCALHOST}
     depends_on:
       - config-server
     networks:
@@ -71,8 +70,6 @@ services:
       - "8765:8765"
     environment:
       SPRING_PROFILES_ACTIVE: docker, prod
-      LOCALHOST: ${LOCALHOST}
-      GATEWAY_PORT: ${GATEWAY_PORT}
     depends_on:
       - config-server
       - eureka-server
@@ -81,15 +78,15 @@ services:
     networks:
       - net
 
-  rabbitmq:
-    image: rabbitmq:3.9.29-management
-    restart: always
-    environment:
-      RABBITMQ_DEFAULT_USER: root
-      RABBITMQ_DEFAULT_PASS: root
-    ports:
-      - "15672:15672"
-      - "5672:5672"
+#  rabbitmq:
+#    image: rabbitmq:3.9.29-management
+#    restart: always
+#    environment:
+#      RABBITMQ_DEFAULT_USER: root
+#      RABBITMQ_DEFAULT_PASS: root
+#    ports:
+#      - "15672:15672"
+#      - "5672:5672"
 
   # Services
   core-service:
@@ -103,7 +100,6 @@ services:
           memory: 512M
     environment:
       SPRING_PROFILES_ACTIVE: docker, prod, rest
-      LOCALHOST: ${LOCALHOST}
     volumes:
       - core-db-data:/var/lib/postgresql/data
     depends_on:
@@ -128,8 +124,6 @@ services:
       SPRING_PROFILES_ACTIVE: docker, prod, rest
       TELEGRAM_BOT_TOKEN: ${TELEGRAM_BOT_TOKEN}
       TELEGRAM_BOT_NAME: ${TELEGRAM_BOT_NAME}
-      LOCALHOST: ${LOCALHOST}
-      GATEWAY_PORT: ${GATEWAY_PORT}
     volumes:
       - telegram-bot-db-data:/var/lib/postgresql/data
     depends_on:
