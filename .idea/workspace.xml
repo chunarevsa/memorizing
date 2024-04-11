@@ -4,33 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f77e50e8-2d0e-4bca-b1af-2dd1104bce81" name="Changes" comment="add util module">
-      <change afterPath="$PROJECT_DIR$/memorizing-core/src/test/resources/application-local.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/memorizing-core/src/test/resources/application-prod.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/memorizing-core/src/test/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/src/main/java/com/memorizing/util/InternetUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env_EXAMPLE" beforeDir="false" afterPath="$PROJECT_DIR$/.env_EXAMPLE" afterDir="false" />
+    <list default="true" id="f77e50e8-2d0e-4bca-b1af-2dd1104bce81" name="Changes" comment="update settings">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api-gateway" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application-prod.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application-prod.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commands" beforeDir="false" afterPath="$PROJECT_DIR$/commands" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server" beforeDir="false" afterPath="$PROJECT_DIR$/config-server" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/src/main/resources/application-prod.yml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/application-prod.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/memorizing-core" beforeDir="false" afterPath="$PROJECT_DIR$/memorizing-core" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/memorizing-core/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/memorizing-core/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/memorizing-core/src/main/resources/application-prod.yml" beforeDir="false" afterPath="$PROJECT_DIR$/memorizing-core/src/main/resources/application-prod.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/memorizing-core/src/test/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/memorizing-core/src/test/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/memorizing-telegram-bot/src/main/resources/application-prod.yml" beforeDir="false" afterPath="$PROJECT_DIR$/memorizing-telegram-bot/src/main/resources/application-prod.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/memorizing-telegram-bot/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/memorizing-telegram-bot/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/memorizing-core/src/main/java/com/memorizing/core/card/rest/CardRestController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/memorizing-core/src/main/java/com/memorizing/core/card/rest/CardRestController.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memorizing-core/src/main/java/com/memorizing/core/card/rest/api/CardApi.kt" beforeDir="false" afterPath="$PROJECT_DIR$/memorizing-core/src/main/java/com/memorizing/core/card/rest/api/CardApi.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memorizing-core/src/main/java/com/memorizing/core/cardStock/rest/CardStockRestController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/memorizing-core/src/main/java/com/memorizing/core/cardStock/rest/CardStockRestController.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memorizing-core/src/main/java/com/memorizing/core/cardStock/rest/api/CardStockApi.kt" beforeDir="false" afterPath="$PROJECT_DIR$/memorizing-core/src/main/java/com/memorizing/core/cardStock/rest/api/CardStockApi.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memorizing-core/src/main/java/com/memorizing/core/storage/StorageController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/memorizing-core/src/main/java/com/memorizing/core/storage/StorageController.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memorizing-core/src/main/java/com/memorizing/core/storage/api/StorageApi.kt" beforeDir="false" afterPath="$PROJECT_DIR$/memorizing-core/src/main/java/com/memorizing/core/storage/api/StorageApi.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memorizing-telegram-bot" beforeDir="false" afterPath="$PROJECT_DIR$/memorizing-telegram-bot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memorizing-telegram-bot/src/main/java/com/memorizing/resource/core/rest/CoreWebClientBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/memorizing-telegram-bot/src/main/java/com/memorizing/resource/core/rest/CoreWebClientBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memorizing-telegram-bot/src/main/java/com/memorizing/resource/user/rest/UserWebClientBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/memorizing-telegram-bot/src/main/java/com/memorizing/resource/user/rest/UserWebClientBuilder.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +115,7 @@
       </map>
     </option>
     <option name="RECENT_COMMON_BRANCH" value="main" />
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/memorizing-telegram-bot" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -140,25 +127,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "C:/Data/Java/memorizing/memorizing-telegram-bot",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.37816092",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
-    "spring.configuration.checksum": "6e43873457eff95a6453930f16f7379e"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Data/Java/memorizing/memorizing-telegram-bot&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.37816092&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;6e43873457eff95a6453930f16f7379e&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -192,7 +179,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Remote JVM Debug.telegram-bot-debug">
+  <component name="RunManager" selected="Gradle.memorizing [bootJar]">
     <configuration name="memorizing [bootJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -562,7 +549,8 @@
       <workItem from="1712230591993" duration="4007000" />
       <workItem from="1712249348582" duration="16000" />
       <workItem from="1712313928580" duration="5691000" />
-      <workItem from="1712737124983" duration="3517000" />
+      <workItem from="1712737124983" duration="8055000" />
+      <workItem from="1712853715938" duration="682000" />
     </task>
     <task id="LOCAL-00001" summary="extract profiles to docker-compose">
       <created>1708210023370</created>
@@ -690,7 +678,21 @@
       <option name="project" value="LOCAL" />
       <updated>1712050370204</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="update settings">
+      <created>1712741232259</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1712741232259</updated>
+    </task>
+    <task id="LOCAL-00020" summary="update settings">
+      <created>1712741261381</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1712741261381</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -743,7 +745,8 @@
     <MESSAGE value="update tests" />
     <MESSAGE value="update" />
     <MESSAGE value="add util module" />
-    <option name="LAST_COMMIT_MESSAGE" value="add util module" />
+    <MESSAGE value="update settings" />
+    <option name="LAST_COMMIT_MESSAGE" value="update settings" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -759,27 +762,27 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/memorizing-core/src/main/java/com/memorizing/core/cardStock/rest/CardStockRestController.kt</url>
-          <line>61</line>
+          <line>60</line>
           <option name="timeStamp" value="29" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/memorizing-telegram-bot/src/main/java/com/memorizing/resource/user/rest/UserWebClientBuilder.java</url>
-          <line>50</line>
+          <line>49</line>
           <option name="timeStamp" value="38" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/memorizing-telegram-bot/src/main/java/com/memorizing/resource/core/rest/CoreWebClientBuilder.java</url>
-          <line>82</line>
+          <line>81</line>
           <option name="timeStamp" value="41" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/memorizing-telegram-bot/src/main/java/com/memorizing/resource/core/rest/CoreWebClientBuilder.java</url>
-          <line>60</line>
+          <line>59</line>
           <option name="timeStamp" value="42" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/memorizing-telegram-bot/src/main/java/com/memorizing/resource/core/rest/CoreWebClientBuilder.java</url>
-          <line>100</line>
+          <line>99</line>
           <option name="timeStamp" value="44" />
         </line-breakpoint>
       </breakpoints>
