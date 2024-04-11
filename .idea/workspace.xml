@@ -4,20 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f77e50e8-2d0e-4bca-b1af-2dd1104bce81" name="Changes" comment="update settings">
+    <list default="true" id="f77e50e8-2d0e-4bca-b1af-2dd1104bce81" name="Changes" comment="add finding services by name and adding routes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/memorizing-core" beforeDir="false" afterPath="$PROJECT_DIR$/memorizing-core" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/memorizing-core/src/main/java/com/memorizing/core/card/rest/CardRestController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/memorizing-core/src/main/java/com/memorizing/core/card/rest/CardRestController.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/memorizing-core/src/main/java/com/memorizing/core/card/rest/api/CardApi.kt" beforeDir="false" afterPath="$PROJECT_DIR$/memorizing-core/src/main/java/com/memorizing/core/card/rest/api/CardApi.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/memorizing-core/src/main/java/com/memorizing/core/cardStock/rest/CardStockRestController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/memorizing-core/src/main/java/com/memorizing/core/cardStock/rest/CardStockRestController.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/memorizing-core/src/main/java/com/memorizing/core/cardStock/rest/api/CardStockApi.kt" beforeDir="false" afterPath="$PROJECT_DIR$/memorizing-core/src/main/java/com/memorizing/core/cardStock/rest/api/CardStockApi.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/memorizing-core/src/main/java/com/memorizing/core/storage/StorageController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/memorizing-core/src/main/java/com/memorizing/core/storage/StorageController.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/memorizing-core/src/main/java/com/memorizing/core/storage/api/StorageApi.kt" beforeDir="false" afterPath="$PROJECT_DIR$/memorizing-core/src/main/java/com/memorizing/core/storage/api/StorageApi.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/memorizing-telegram-bot" beforeDir="false" afterPath="$PROJECT_DIR$/memorizing-telegram-bot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/memorizing-telegram-bot/src/main/java/com/memorizing/resource/core/rest/CoreWebClientBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/memorizing-telegram-bot/src/main/java/com/memorizing/resource/core/rest/CoreWebClientBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/memorizing-telegram-bot/src/main/java/com/memorizing/resource/user/rest/UserWebClientBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/memorizing-telegram-bot/src/main/java/com/memorizing/resource/user/rest/UserWebClientBuilder.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +103,7 @@
       </map>
     </option>
     <option name="RECENT_COMMON_BRANCH" value="main" />
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/memorizing-telegram-bot" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -550,7 +538,7 @@
       <workItem from="1712249348582" duration="16000" />
       <workItem from="1712313928580" duration="5691000" />
       <workItem from="1712737124983" duration="8055000" />
-      <workItem from="1712853715938" duration="682000" />
+      <workItem from="1712853715938" duration="1051000" />
     </task>
     <task id="LOCAL-00001" summary="extract profiles to docker-compose">
       <created>1708210023370</created>
@@ -692,7 +680,14 @@
       <option name="project" value="LOCAL" />
       <updated>1712741261381</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="add finding services by name and adding routes">
+      <created>1712854774689</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1712854774690</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -746,7 +741,8 @@
     <MESSAGE value="update" />
     <MESSAGE value="add util module" />
     <MESSAGE value="update settings" />
-    <option name="LAST_COMMIT_MESSAGE" value="update settings" />
+    <MESSAGE value="add finding services by name and adding routes" />
+    <option name="LAST_COMMIT_MESSAGE" value="add finding services by name and adding routes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -767,22 +763,22 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/memorizing-telegram-bot/src/main/java/com/memorizing/resource/user/rest/UserWebClientBuilder.java</url>
-          <line>49</line>
+          <line>48</line>
           <option name="timeStamp" value="38" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/memorizing-telegram-bot/src/main/java/com/memorizing/resource/core/rest/CoreWebClientBuilder.java</url>
-          <line>81</line>
+          <line>80</line>
           <option name="timeStamp" value="41" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/memorizing-telegram-bot/src/main/java/com/memorizing/resource/core/rest/CoreWebClientBuilder.java</url>
-          <line>59</line>
+          <line>58</line>
           <option name="timeStamp" value="42" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/memorizing-telegram-bot/src/main/java/com/memorizing/resource/core/rest/CoreWebClientBuilder.java</url>
-          <line>99</line>
+          <line>98</line>
           <option name="timeStamp" value="44" />
         </line-breakpoint>
       </breakpoints>
