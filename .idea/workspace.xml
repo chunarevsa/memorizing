@@ -4,8 +4,65 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f77e50e8-2d0e-4bca-b1af-2dd1104bce81" name="Changes" comment="add finding services by name and adding routes">
+    <list default="true" id="f77e50e8-2d0e-4bca-b1af-2dd1104bce81" name="Changes" comment="update">
+      <change afterPath="$PROJECT_DIR$/memorizing-common-api/src/main/java/com/memorizing/commonapi/model/card/CardDto.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/memorizing-common-api/src/main/java/com/memorizing/commonapi/model/card/CardFieldsDto.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/memorizing-common-api/src/main/java/com/memorizing/commonapi/model/card/CheckCardDto.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/memorizing-common-api/src/main/java/com/memorizing/commonapi/model/card/TestResultDto.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/memorizing-common-api/src/main/java/com/memorizing/commonapi/model/cardStock/CardStockDto.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/memorizing-common-api/src/main/java/com/memorizing/commonapi/model/cardStock/CardStockFieldsDto.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/memorizing-common-api/src/main/java/com/memorizing/commonapi/model/storage/StorageDto.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/memorizing-common-api/src/main/java/com/memorizing/commonapi/model/storage/StorageFieldsDto.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/memorizing-core/src/main/java/com/memorizing/core/card/CardMapper.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/memorizing-core/src/test/java/com/memorizing/core/storage/rest/StorageRestControllerTests.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/memorizing-telegram-bot/src/main/java/com/memorizing/model/storage/ECardStatus.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/memorizing-telegram-bot/src/main/java/com/memorizing/utils/CardMapper.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/memorizing-telegram-bot/src/main/java/com/memorizing/utils/CardStockMapper.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/memorizing-telegram-bot/src/main/java/com/memorizing/utils/StorageMapper.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memorizing-common-api/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/memorizing-common-api/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memorizing-common-api/src/main/java/com/memorizing/commonapi/model/CheckCardDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/memorizing-core" beforeDir="false" afterPath="$PROJECT_DIR$/memorizing-core" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memorizing-core/src/main/java/com/memorizing/core/card/Card.kt" beforeDir="false" afterPath="$PROJECT_DIR$/memorizing-core/src/main/java/com/memorizing/core/card/Card.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memorizing-core/src/main/java/com/memorizing/core/card/CardService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/memorizing-core/src/main/java/com/memorizing/core/card/CardService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memorizing-core/src/main/java/com/memorizing/core/card/CardServiceImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/memorizing-core/src/main/java/com/memorizing/core/card/CardServiceImpl.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memorizing-core/src/main/java/com/memorizing/core/card/rest/CardRestController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/memorizing-core/src/main/java/com/memorizing/core/card/rest/CardRestController.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memorizing-core/src/main/java/com/memorizing/core/card/rest/api/CardApi.kt" beforeDir="false" afterPath="$PROJECT_DIR$/memorizing-core/src/main/java/com/memorizing/core/card/rest/CardApi.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memorizing-core/src/main/java/com/memorizing/core/card/rest/api/CardDto.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/memorizing-core/src/main/java/com/memorizing/core/card/rest/api/CardFieldsDto.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/memorizing-core/src/main/java/com/memorizing/core/card/rest/api/CardMapper.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/memorizing-core/src/main/java/com/memorizing/core/card/rest/api/TestResultDto.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/memorizing-core/src/main/java/com/memorizing/core/cardStock/CardStockService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/memorizing-core/src/main/java/com/memorizing/core/cardStock/CardStockService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memorizing-core/src/main/java/com/memorizing/core/cardStock/CardStockServiceImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/memorizing-core/src/main/java/com/memorizing/core/cardStock/CardStockServiceImpl.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memorizing-core/src/main/java/com/memorizing/core/cardStock/rest/CardStockRestController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/memorizing-core/src/main/java/com/memorizing/core/cardStock/rest/CardStockRestController.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memorizing-core/src/main/java/com/memorizing/core/cardStock/rest/api/CardStockApi.kt" beforeDir="false" afterPath="$PROJECT_DIR$/memorizing-core/src/main/java/com/memorizing/core/cardStock/rest/CardStockApi.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memorizing-core/src/main/java/com/memorizing/core/cardStock/rest/api/CardStockDto.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/memorizing-core/src/main/java/com/memorizing/core/cardStock/rest/api/CardStockFieldsDto.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/memorizing-core/src/main/java/com/memorizing/core/cardStock/rest/api/CardStockMapper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/memorizing-core/src/main/java/com/memorizing/core/cardStock/CardStockMapper.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memorizing-core/src/main/java/com/memorizing/core/storage/StorageController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/memorizing-core/src/main/java/com/memorizing/core/storage/rest/StorageRestController.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memorizing-core/src/main/java/com/memorizing/core/storage/StorageService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/memorizing-core/src/main/java/com/memorizing/core/storage/StorageService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memorizing-core/src/main/java/com/memorizing/core/storage/StorageServiceImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/memorizing-core/src/main/java/com/memorizing/core/storage/StorageServiceImpl.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memorizing-core/src/main/java/com/memorizing/core/storage/api/StorageApi.kt" beforeDir="false" afterPath="$PROJECT_DIR$/memorizing-core/src/main/java/com/memorizing/core/storage/rest/StorageApi.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memorizing-core/src/main/java/com/memorizing/core/storage/api/StorageDto.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/memorizing-core/src/main/java/com/memorizing/core/storage/api/StorageFieldsDto.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/memorizing-core/src/main/java/com/memorizing/core/storage/api/StorageMapper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/memorizing-core/src/main/java/com/memorizing/core/storage/StorageMapper.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memorizing-core/src/test/java/com/example/memorizing/MemorizingApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/memorizing-core/src/test/java/com/memorizing/core/MemorizingApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memorizing-core/src/test/java/com/example/memorizing/config/ApplicationTestConfig.kt" beforeDir="false" afterPath="$PROJECT_DIR$/memorizing-core/src/test/java/com/memorizing/core/config/ApplicationTestConfig.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memorizing-core/src/test/java/com/example/memorizing/service/StorageServiceTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/memorizing-core/src/test/java/com/memorizing/core/storage/StorageServiceTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memorizing-core/src/test/java/com/memorizing/core/storage/StorageControllerTests.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/memorizing-core/src/test/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/memorizing-core/src/test/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memorizing-telegram-bot" beforeDir="false" afterPath="$PROJECT_DIR$/memorizing-telegram-bot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memorizing-telegram-bot/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/memorizing-telegram-bot/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memorizing-telegram-bot/src/main/java/com/memorizing/model/storage/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/memorizing-telegram-bot/src/main/java/com/memorizing/model/storage/Card.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memorizing-telegram-bot/src/main/java/com/memorizing/model/storage/CardStock.java" beforeDir="false" afterPath="$PROJECT_DIR$/memorizing-telegram-bot/src/main/java/com/memorizing/model/storage/CardStock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memorizing-telegram-bot/src/main/java/com/memorizing/model/storage/Storage.java" beforeDir="false" afterPath="$PROJECT_DIR$/memorizing-telegram-bot/src/main/java/com/memorizing/model/storage/Storage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memorizing-telegram-bot/src/main/java/com/memorizing/resource/core/mq/rabbitmq/StorageRabbitMQProducerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/memorizing-telegram-bot/src/main/java/com/memorizing/resource/core/mq/rabbitmq/StorageRabbitMQProducerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memorizing-telegram-bot/src/main/java/com/memorizing/resource/core/rest/CoreWebClientBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/memorizing-telegram-bot/src/main/java/com/memorizing/resource/core/rest/CoreWebClientBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memorizing-telegram-bot/src/main/java/com/memorizing/resource/core/rest/dto/card/CardFieldsDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/memorizing-telegram-bot/src/main/java/com/memorizing/resource/core/rest/dto/cardStock/CardStockFieldsDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/memorizing-telegram-bot/src/main/java/com/memorizing/resource/core/rest/dto/storage/StorageFieldsDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/memorizing-telegram-bot/src/main/java/com/memorizing/resource/user/rest/UserWebClientBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/memorizing-telegram-bot/src/main/java/com/memorizing/resource/user/rest/UserWebClientBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memorizing-telegram-bot/src/main/java/com/memorizing/service/MenuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/memorizing-telegram-bot/src/main/java/com/memorizing/service/MenuService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,6 +148,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -103,7 +161,7 @@
       </map>
     </option>
     <option name="RECENT_COMMON_BRANCH" value="main" />
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/memorizing-telegram-bot" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -156,7 +214,17 @@
       <recent name="C:\Data\Java\memorizing\memorizing-core\dbbackup" />
     </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
-      <recent name="com.memorizing.commonapi.model" />
+      <recent name="com.memorizing.core.storage.rest" />
+      <recent name="com.memorizing.core.storage" />
+      <recent name="com.memorizing.utils" />
+      <recent name="com.memorizing.core.card" />
+      <recent name="com.memorizing.commonapi.model.card" />
+    </key>
+    <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="com.memorizing.model.storage" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.memorizing.commonapi.model.card" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -167,7 +235,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.memorizing [bootJar]">
+  <component name="RunManager" selected="Docker.docker-compose.yml.telegram-bot-service: Compose Deployment">
     <configuration name="memorizing [bootJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -180,6 +248,27 @@
         <option name="taskNames">
           <list>
             <option value="bootJar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="memorizing [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -394,19 +483,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="docker-compose.yml.api-gateway: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="services">
-            <list>
-              <option value="api-gateway" />
-            </list>
-          </option>
-          <option name="sourceFilePath" value="docker-compose.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
     <configuration name="docker-compose.yml.core-service: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
@@ -434,10 +510,10 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Docker.docker-compose.yml.api-gateway: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml.core-service: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml.telegram-bot-service: Compose Deployment" />
       <item itemvalue="Gradle.memorizing-core [:memorizing-common-api:build]" />
+      <item itemvalue="Gradle.memorizing [build]" />
       <item itemvalue="Gradle.memorizing [clean]" />
       <item itemvalue="Gradle.memorizing [bootJar]" />
       <item itemvalue="Remote JVM Debug.core-debug" />
@@ -453,11 +529,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.memorizing [bootJar]" />
-        <item itemvalue="Gradle.memorizing [clean]" />
         <item itemvalue="Docker.docker-compose.yml.telegram-bot-service: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose.yml.api-gateway: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.core-service: Compose Deployment" />
+        <item itemvalue="Gradle.memorizing [bootJar]" />
+        <item itemvalue="Gradle.memorizing [build]" />
+        <item itemvalue="Gradle.memorizing [clean]" />
       </list>
     </recent_temporary>
   </component>
@@ -538,7 +614,9 @@
       <workItem from="1712249348582" duration="16000" />
       <workItem from="1712313928580" duration="5691000" />
       <workItem from="1712737124983" duration="8055000" />
-      <workItem from="1712853715938" duration="1051000" />
+      <workItem from="1712853715938" duration="3318000" />
+      <workItem from="1712910289131" duration="6629000" />
+      <workItem from="1712918305499" duration="504000" />
     </task>
     <task id="LOCAL-00001" summary="extract profiles to docker-compose">
       <created>1708210023370</created>
@@ -687,7 +765,14 @@
       <option name="project" value="LOCAL" />
       <updated>1712854774690</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="update">
+      <created>1712855735916</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1712855735916</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -738,11 +823,11 @@
     <MESSAGE value="add backup" />
     <MESSAGE value="add exceptions" />
     <MESSAGE value="update tests" />
-    <MESSAGE value="update" />
     <MESSAGE value="add util module" />
     <MESSAGE value="update settings" />
     <MESSAGE value="add finding services by name and adding routes" />
-    <option name="LAST_COMMIT_MESSAGE" value="add finding services by name and adding routes" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -758,27 +843,17 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/memorizing-core/src/main/java/com/memorizing/core/cardStock/rest/CardStockRestController.kt</url>
-          <line>60</line>
+          <line>59</line>
           <option name="timeStamp" value="29" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/memorizing-telegram-bot/src/main/java/com/memorizing/resource/user/rest/UserWebClientBuilder.java</url>
-          <line>48</line>
+          <line>50</line>
           <option name="timeStamp" value="38" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/memorizing-telegram-bot/src/main/java/com/memorizing/resource/core/rest/CoreWebClientBuilder.java</url>
-          <line>80</line>
-          <option name="timeStamp" value="41" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/memorizing-telegram-bot/src/main/java/com/memorizing/resource/core/rest/CoreWebClientBuilder.java</url>
-          <line>58</line>
-          <option name="timeStamp" value="42" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/memorizing-telegram-bot/src/main/java/com/memorizing/resource/core/rest/CoreWebClientBuilder.java</url>
-          <line>98</line>
+          <line>95</line>
           <option name="timeStamp" value="44" />
         </line-breakpoint>
       </breakpoints>
